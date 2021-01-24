@@ -85,4 +85,4 @@ int num = dictionaryMapper.selectCount(ex);
 ```
 
 除了以上的还有其他很多，当然也支持自定义查询和删除。
-这个使用比较方便，开发效率变的比较高，可以不用自己手写Mapper层已经mapper层的SQL
+这个使用比较方便，开发效率变的比较高，可以不用自己手写Mapper层和mapper层的SQL
