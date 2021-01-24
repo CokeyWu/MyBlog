@@ -45,7 +45,7 @@ private DictionaryMapper dictionaryMapper;
 UserEntity ex = new UserEntity()
 ex.setName("张三");
 ex.setAge(11);
-List<UserEntity> list = dictionaryMapper.select(UserEntity entity);
+List<UserEntity> list = dictionaryMapper.select(ex);
 ```
 
 ### 根据条件查询一个 ，相当于limit 1
@@ -53,7 +53,7 @@ List<UserEntity> list = dictionaryMapper.select(UserEntity entity);
 UserEntity ex = new UserEntity()
 ex.setName("张三");
 ex.setAge(11);
-UserEntity entity = dictionaryMapper.selectOne(UserEntity entity);
+UserEntity entity = dictionaryMapper.selectOne(ex);
 ```
 ### 根据模板查询
 ```java
@@ -77,7 +77,7 @@ List<UserEntity> list = dictionaryMapper.selectAll();
 ```java
 UserEntity ex = new UserEntity()
 ex.setId(1);
-UserEntity entity = dictionaryMapper.selectByPrimaryKey(UserEntity entity);
+UserEntity entity = dictionaryMapper.selectByPrimaryKey(ex);
 ```
 
 ### 根据条件计算总数
