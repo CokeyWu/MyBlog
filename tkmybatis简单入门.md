@@ -55,7 +55,7 @@ ex.setName("张三");
 ex.setAge(11);
 UserEntity entity = dictionaryMapper.selectOne(ex);
 ```
-### 根据模板查询
+### 根据模板查询 比较灵活的条件查询
 ```java
 dictionaryMapper.selectByExample(UserEntity entity);
 Example example = new Example(UserEntity.class);
@@ -68,9 +68,6 @@ List<UserEntity> list = dictionaryMapper.selectByExample(example);
 ```
 ### 查询全表
 ```java
-UserEntity ex = new UserEntity()
-ex.setName("张三");
-ex.setAge(11);
 List<UserEntity> list = dictionaryMapper.selectAll();
 ```
 ### 根据主键查询
