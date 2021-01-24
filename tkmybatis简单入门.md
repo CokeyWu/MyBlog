@@ -57,7 +57,6 @@ UserEntity entity = dictionaryMapper.selectOne(ex);
 ```
 ### 根据模板查询 比较灵活的条件查询
 ```java
-dictionaryMapper.selectByExample(UserEntity entity);
 Example example = new Example(UserEntity.class);
 Example.Criteria criteria = example.createCriteria();
 criteria.andEqualTo("name", "张三");
