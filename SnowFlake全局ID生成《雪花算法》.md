@@ -1,4 +1,4 @@
-# tkmybatis入门
+# SnowFlake
 `雪花算法`英文叫`SnowFlake`算法，是`Twitter`开源的分布式id生成算法。其核心思想就是：使用一个64bit的long型的数字作为全局唯一id。在分布式系统中的应用十分广泛，且ID引入了时间戳，基本上保持自增的，后面的代码中有详细的注解。
 
 ![avatar](https://pic1.zhimg.com/80/v2-89659f2e11fdbdacd672a26b7be42068_1440w.jpg)
